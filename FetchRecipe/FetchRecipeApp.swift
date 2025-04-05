@@ -7,11 +7,21 @@
 
 import SwiftUI
 
+/**
+ The main entry point for the `FetchRecipe`.
+
+ This struct represents the application's lifecycle and initializes the root view (`RecipeView`) inside the main `WindowGroup`.
+
+ - Features:
+ - Uses the SwiftUI `@main` attribute to define the app's entry point.
+ - Loads `RecipeView` as the initial user interface for the app.
+ */
 @main
-struct FetchRecipeApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-    }
+struct FetchRecipeAppApp: App {
+		/// The body of the app, defining the main scene and its content.
+	var body: some Scene {
+		WindowGroup {
+			RecipeView()
+		}
+	}
 }
